@@ -21,8 +21,8 @@ function ChartCard({ labels = [], name, series = [], soma }: Props) {
         <div className="chart-container">
           <ReactApexChart
             options={buildPieChartConfig(labels, name)}
-            type="donut"
-            width="400"
+            type="pie"
+            width="600"
             series={series}
           />
         </div>
